@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  font-family: "Montserrat", Arial;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: black;
+  color: white;
+}
+
+.container {
+  padding: 3rem;
+  box-shadow: 0 0 25px rgb(255, 217, 4);
+  border-radius: 10px;
+}
+button {
+  font-weight: bold;
+  border-radius: 5px;
+  background: rgb(255, 217, 0);
+  border: 1px solid white;
+}
+
+button:hover {
+  box-shadow:0 0 25px rgb(255, 217, 4); 
+}
+
+button:active {
+  box-shadow: 0 0 25px rgb(255, 217, 4), 0 0 50px rgb(255, 217, 4);
+}
+.title {
+  text-align: center;
+  padding: 0;
+  margin-top: 0;
+}
+
+.todo-grid,
+.todo-input-grid {
+  display: grid;
+  grid-template-columns: 200px 150px 100px;
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: center;
+}
+
+.todo-input-grid {
+  margin-bottom: 10px;
+  align-items: stretch;
+}
+
+.name-input,
+.due-date-input {
+  font-size: 18px;
+  padding: 6px;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 10px;
+  outline: none;
+  text-align: start;
+}
+
+
+.add-todo-button {
+  color: white;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.delete-todo-button {
+  color: white;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.todos {
+  font-size: 18px;
+  padding: 6px;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 10px;
+  background-color: white;
+  color: black;
+  text-align: center;
+}
